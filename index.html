@@ -1,0 +1,842 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>电子书PDF转章节AI有声书-64分 · 完整证据包</title><style>body{margin:0;font-family:-apple-system,"PingFang SC","Noto Sans SC",sans-serif;background:#0f1419;color:#e7ecf3;line-height:1.65}
+.top{position:sticky;top:0;background:#0f1419ee;border-bottom:1px solid #2a3548;padding:8px 16px}.top a{color:#9aa8bc;margin-right:10px;font-size:13px;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:20px}a{color:#5b9fd4}table{border-collapse:collapse;display:block;overflow-x:auto}td,th{border:1px solid #2a3548;padding:4px 8px}
+pre,code{background:#121a26;white-space:pre-wrap}h2.sec{border-top:2px solid #5b9fd4;padding-top:16px;margin-top:40px}</style></head><body><div class="top"><a href="#report">完整报告</a><a href="#sop-criteria">sop-criteria.md</a><a href="#sop-v3">sop-v3.md</a><a href="#files">证据文件</a></div><div class="wrap"><section id="report"><h2 class="sec">完整报告</h2><p>这个产品帮助手里有合法可转换电子书的读者和学生，在通勤或不方便看屏幕的场景下，解决 EPUB/PDF 难以转成可下载、可跳章节的离线有声书的问题。</p>
+<h2 id="_1">需求判断卡</h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①结论</td>
+<td><strong>不做：暂缓完整独立站立项，保留新域名单页的首付验证。</strong> 需求真实，但当前切口的真实付款未找到，尚未通过 PMF（用户持续愿意为这个交付买单）门槛；不能把学习工具订阅当成章节文件的付费证明。<a href="https://libritalk.com/">直接对标</a></td>
+</tr>
+<tr>
+<td>②只判一个任务</td>
+<td><strong>谁</strong>：有待听电子书、愿意使用自己的播放器的个人读者。<strong>输入</strong>：有权转换、无 DRM（数字版权保护）的 EPUB／可提取文字的 PDF，加选定声音。<strong>输出</strong>：带章节的 M4B 有声书，或分章 MP3 ZIP。<strong>任务</strong>：把整份原文转成可永久保存的离线听书文件。一句话产品：上传、核对目录与正文、试听，按本购买并下载。</td>
+</tr>
+<tr>
+<td>三维决策</td>
+<td><strong>有相关需求：是；当前切口能否独立收费：待验证；是否优先靠 SEO 扩站：暂不，先验证收费，再测搜索获客。</strong> 有竞品支持市场存在，不能据此证明这一个交付已被购买。</td>
+</tr>
+<tr>
+<td>③核心词与首批页面</td>
+<td>首页 <code>/</code>：<code>epub to audiobook</code>、<code>convert epub to audiobook</code>；<code>/pdf-to-audiobook</code>：<code>pdf to audiobook</code>、<code>convert pdf to audiobook</code>；<code>/epub-to-m4b</code>：<code>epub to m4b</code>。同义词共用页面，首页只承接文件转换意图。<a href="evidence/final-judgments.json">词证据</a></td>
+</tr>
+<tr>
+<td>④关键数字</td>
+<td>美国月搜：PDF 主词 <strong>880</strong>、EPUB 主词 <strong>390</strong>、PDF 转换词 <strong>170</strong>；均为返回正数，<strong>不相加当独立人数</strong>。PDF 样本 <strong>8 条</strong>，最弱独立站 VoiceBrief <strong>DR17</strong>；<code>convert epub to audiobook</code> 样本 <strong>8 条</strong>，Eist、Voice-generator <strong>DR3</strong>，但前者主卖阅读器。KD／KGR／精确链接预算：<strong>未取得</strong>。最大同任务对手访问量：<strong>未找到</strong>；LibriTalk 公布按本 <strong>$0.99／$2.49／$4.99</strong>。<a href="evidence/final-judgments.json">量与SERP</a> · <a href="https://libritalk.com/">竞品价</a></td>
+</tr>
+<tr>
+<td>⑤付费证据</td>
+<td>LibriTalk＝<strong>按件价，仅定价页</strong>；本次未找到可核验交易或付费人数。VoiceBrief 有 <strong>6 个活跃订阅</strong>，但属于学习套件，<strong>不计入本任务付费分</strong>。<a href="https://trustmrr.com/startup/voicebrief">Stripe 验证页，更新于2026-10-28</a></td>
+</tr>
+<tr>
+<td>⑥最小版本与成本</td>
+<td>限英文 EPUB＋文字 PDF：目录/正文核对→短段试听→异步逐章合成→下载并检查播放。建议验证价 <strong>$4.99／本，上限50万字符</strong>，是实验方案。该字符数的 TTS 理论费用 <strong>$0.495</strong>；其余处理、存储、失败重做、退款和客服成本未实测。<a href="https://deepinfra.com/hexgrad/Kokoro-82M">合成单价</a></td>
+</tr>
+<tr>
+<td>⑦凭什么赢</td>
+<td>待验证的优势是“免安装、转换前能改目录与正文、失败只重做出错章节、文件能直接进常用播放器”；<strong>M4B 格式本身已不是独家能力</strong>。<a href="https://github.com/kingfish600/Audiobook-NightForge">免费同任务方案</a></td>
+</tr>
+<tr>
+<td>⑧增长路径</td>
+<td>英文 EPUB 转换首页→PDF 转换页→M4B 导入指南→有实付后再做西语 PDF 页面；暂不扩出版工作室、摘要播客和泛 TTS。<a href="evidence/keyword-summary.json">各国数据</a></td>
+</tr>
+<tr>
+<td>⑨最大风险与改判未知</td>
+<td>最大风险是用户实际只要“听”，免费阅读器已够用；另有免费章节导出工具。会改决定的证据：用户明确需要可带走的文件，且愿意为省安装、纠错和可靠交付付款。ChatGPT 原生整书章节导出能力本次<strong>未找到完整证明，也不能断言做不到</strong>。<a href="https://www.paper2audio.com/">免费朗读与离线听</a> · <a href="https://github.com/DrewThomasson/ebook2audiobook">免费章节导出</a></td>
+</tr>
+<tr>
+<td>⑩下一步与验收</td>
+<td>先做有字符上限的付费交付实验；首付、再次使用、再次购买分别记账。通过后才 D0 发布并提交 GSC→收录→曝光/排名→自然搜索真实付款；未到节点不买外链。具体天数待哥飞顾问按内页生命周期模型补。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="64100">分数：64／100，暂不推荐投入完整站</h2>
+<p>原日报和交接卡只给“推／信心中”，<strong>五项原分未找到</strong>，不补造。以下只评本次单一任务；按五项合计÷25×100换算，总分不是 SEO 难度分。<a href="evidence/source-demand.md">初筛记录</a> · <a href="evidence/source-handoff.md">交接卡</a></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>专员原分</th>
+<th style="text-align: right;">核实后／5</th>
+<th>关键证据与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>需求真实</td>
+<td>未找到</td>
+<td style="text-align: right;">4</td>
+<td>有文件转音频的直接求助；是否必须下载章节文件仍需筛选。<a href="https://www.reddit.com/r/audiobooks/comments/1x1gzyn/speechify_alternatives/">用户原帖</a></td>
+</tr>
+<tr>
+<td>付费意愿</td>
+<td>未找到</td>
+<td style="text-align: right;">2</td>
+<td>同任务只有公开报价；“在用”“愿意买”不足以证明付款。<a href="https://libritalk.com/">直接对标报价</a></td>
+</tr>
+<tr>
+<td>好服务</td>
+<td>未找到</td>
+<td style="text-align: right;">3</td>
+<td>用户不会安装 GitHub 工具，但也要求复杂 PDF 提取准确。限定文字 PDF 后可服务，不能承诺所有教材。<a href="https://www.reddit.com/r/audiobooks/comments/1x1gzyn/speechify_alternatives/">原帖评论</a></td>
+</tr>
+<tr>
+<td>小团队做得动</td>
+<td>未找到</td>
+<td style="text-align: right;">4</td>
+<td>已有开源转换管线和低价合成；仍须做长任务恢复与文件兼容。<a href="https://github.com/DrewThomasson/ebook2audiobook">开源项目</a> · <a href="https://deepinfra.com/hexgrad/Kokoro-82M">单价</a></td>
+</tr>
+<tr>
+<td>形态简单</td>
+<td>未找到</td>
+<td style="text-align: right;">3</td>
+<td>入口像上传表单，交付包含切章、清洗、长音频、重试和播放器检查，不能按一次 API 调用估工。<a href="https://github.com/kingfish600/Audiobook-NightForge">同任务实现</a></td>
+</tr>
+</tbody>
+</table>
+<p>付费项低于3，未通过本批筛选门槛。<strong>未找到付款不是断言无人付款</strong>；当前建议是暂缓完整站投资，继续做最小收费验证。<a href="evidence/sop-criteria.md">筛选依据</a></p>
+<h2 id="_2">关键词作战表：重新启动时先做这些词</h2>
+<p>数据截面：2026-10-29，PXAny／Google 规划师口径。CPC 为页首出价低/高值，USD，<strong>不是实际获客费</strong>；Ads competition 是广告竞争，不能代替 SEO 难度。SERP 以预跑最终表为准，<strong>全部样本不足十条</strong>；大站分类含平台/商店及样本 DR≥60 的站，UGC 含论坛、视频和代码社区。<a href="evidence/keyword-serp-full.md">完整数据与来源说明</a></p>
+<table>
+<thead>
+<tr>
+<th>关键词／市场语言</th>
+<th>月搜</th>
+<th>12月趋势</th>
+<th>KD／KGR</th>
+<th>CPC低/高；广告竞争</th>
+<th>SERP构成与年龄线索</th>
+<th>最弱占位</th>
+<th>意图／页面／优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="evidence/final-judgments.json">epub to audiobook</a>／US英语</td>
+<td>390（返回正数）</td>
+<td>已取得，见趋势表</td>
+<td>未取得／未取得</td>
+<td>$1.39–$4.97；MEDIUM</td>
+<td>大站6／独立0／社区3；样本9条；18个月新域名0个；不采信：疑似丢词</td>
+<td>未取得（结果意图异常）</td>
+<td>文件转换；首页，P0</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">convert epub to audiobook</a>／US英语</td>
+<td>70（返回正数）</td>
+<td>未取得</td>
+<td>未取得／未取得</td>
+<td>$1.59–$4.89；MEDIUM</td>
+<td>大站0／独立5／社区3；样本8条；18个月新域名3个</td>
+<td><a href="https://eist.app/blog/how-to-listen-to-epub-files-as-audiobooks">eist.app</a> DR3；同DR3另有转换站voice-generator.com，Eist偏阅读器</td>
+<td>文件转换；首页，P0</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">pdf to audiobook</a>／US英语</td>
+<td>880（返回正数）</td>
+<td>已取得，见趋势表</td>
+<td>未取得／未取得</td>
+<td>$1.19–$5.92；MEDIUM</td>
+<td>大站2／独立1／社区5；样本8条；18个月新域名1个</td>
+<td><a href="https://voicebrief.io/blog/how-to-convert-pdf-to-audiobook">voicebrief.io</a> DR17</td>
+<td>文件转换；PDF工具页，P0</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">convert pdf to audiobook</a>／US英语</td>
+<td>170（返回正数）</td>
+<td>已取得，见趋势表</td>
+<td>未取得／未取得</td>
+<td>$1.63–$8.10；MEDIUM</td>
+<td>大站2／独立3／社区3；样本8条；18个月新域名1个</td>
+<td><a href="https://voicebrief.io/blog/how-to-convert-pdf-to-audiobook">voicebrief.io</a> DR17</td>
+<td>文件转换；PDF工具页，P0</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">epub to m4b</a>／US英语</td>
+<td>10（返回正数）</td>
+<td>未取得</td>
+<td>未取得／未取得</td>
+<td>$0.00–$0.00；LOW</td>
+<td>大站4／独立1／社区4；样本9条；18个月新域名0个；不采信：疑似丢词</td>
+<td>未取得（结果意图异常）</td>
+<td>文件转换；M4B指南/工具入口，P1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>先做哪5个词、放哪页：</strong> 首页承接 <code>epub to audiobook</code>＋<code>convert epub to audiobook</code>；PDF 页承接 <code>pdf to audiobook</code>＋<code>convert pdf to audiobook</code>；M4B 页承接 <code>epub to m4b</code>。先做好这三个真实可用页面，避免一词一页。</p>
+<p><strong>不做的词：</strong> <code>text to speech</code>、<code>tts</code> 是更大且不同的输入任务；品牌替代词容易吸来只需阅读器的人；<code>mp3 to m4b</code> 输入已经是音频；Kindle/Audible 去 DRM、作者商用发行不在本次任务内。这些相邻机会只列表，不贡献本任务搜索量、付费或竞争分。</p>
+<p><strong>补查与缺口：</strong> 已用公开搜索复核 PDF/EPUB 转有声书、EPUB→M4B、AI audiobook generator 的结果意图；它们不是指定国家的 Google 完整前十。美国 <code>epub to audiobook</code>、<code>epub to m4b</code> 的预跑结果疑似丢词，不能据它判红海；三个 converter 同义词月搜仍未返回。认证接口补查因 DNS 失败，未补齐十席。<a href="evidence/web-core-serpcheck.json">补查样本</a> · <a href="evidence/volume-recheck-error.json">接口失败</a></p>
+<h2 id="_3">词族与红海处理</h2>
+<p><strong>宽词必须覆盖，但不能把作者出版需求加到个人转换任务里。</strong> 下表为已查询的头部和工具形态词；宽词中只有上传现成电子书并下载自用音频的部分对口，因此不合计成主任务规模。<a href="evidence/final-judgments.json">原始与最终表</a></p>
+<table>
+<thead>
+<tr>
+<th>父词/形态词（美国英语）</th>
+<th>月搜状态</th>
+<th>CPC低/高</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="evidence/final-judgments.json">audiobook maker</a></td>
+<td>590（返回正数）</td>
+<td>$1.25–$5.31</td>
+<td>P2，混合个人转换与作者制作；不绑首页、不合计市场量</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">audiobook generator</a></td>
+<td>210（返回正数）</td>
+<td>$1.27–$5.90</td>
+<td>P2，混合个人转换与作者制作；不绑首页、不合计市场量</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">ai audiobook generator</a></td>
+<td>260（返回正数）</td>
+<td>$1.77–$8.21</td>
+<td>P2，混合个人转换与作者制作；不绑首页、不合计市场量</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">ai audiobook maker</a></td>
+<td>50（返回正数）</td>
+<td>$1.37–$4.91</td>
+<td>P2，混合个人转换与作者制作；不绑首页、不合计市场量</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">ai audiobook creator</a></td>
+<td>30（返回正数）</td>
+<td>$2.04–$8.53</td>
+<td>P2，混合个人转换与作者制作；不绑首页、不合计市场量</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">pdf to audiobook app</a></td>
+<td>10（返回正数）</td>
+<td>$1.63–$8.02</td>
+<td>PDF页同义词，先不另建App/软件页</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">pdf to audiobook software</a></td>
+<td>10（返回正数）</td>
+<td>$0.00–$0.00</td>
+<td>PDF页同义词，先不另建App/软件页</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">ebook to audiobook app</a></td>
+<td>10（返回正数）</td>
+<td>$0.00–$0.00</td>
+<td>偏阅读器，P2，不另起页</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">ai audiobook software</a></td>
+<td>未返回</td>
+<td>$0.00–$0.00</td>
+<td>已查核心SERP；原0无法认证，P2暂不投入</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">audiobook generation software</a></td>
+<td>未返回</td>
+<td>$0.00–$0.00</td>
+<td>已查核心SERP；原0无法认证，P2暂不投入</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">online audiobook generator</a></td>
+<td>未返回</td>
+<td>$0.00–$0.00</td>
+<td>已查核心SERP；原0无法认证，P2暂不投入</td>
+</tr>
+<tr>
+<td><a href="evidence/final-judgments.json">epub to audiobook converter</a></td>
+<td>未返回</td>
+<td>未取得–未取得</td>
+<td>转换同义词，首页正文承接；量未返回也已查SERP</td>
+</tr>
+</tbody>
+</table>
+<p>宽词观察：<code>ai audiobook generator</code> 8条样本＝大站5／独立工具商2／社区1，独立站最低DR14；<code>audiobook maker</code> 9条＝大站6／独立3，最低DR14。它们有工具意图，但期望功能更宽，不据此提高本任务竞争分。<a href="evidence/final-judgments.json">最终构成</a></p>
+<p>首页只绑定 EPUB 文件转换，不用 <code>ai audiobook generator</code> 同时承接创作、配音、出版三种任务。格式与导入指南应链接回转换工具，而不是靠低量格式词撑整站。</p>
+<p><strong>主词暂不能判“前十全被大站占满”</strong>：PDF 结果里有独立低 DR 站，EPUB 主词结果又有意图异常。宽词竞争与需求混杂时，先比较以下同任务尾词，不以年轻域名推导排名容易。<a href="evidence/final-judgments.json">最终SERP</a></p>
+<table>
+<thead>
+<tr>
+<th>替代词／美国</th>
+<th>月搜状态</th>
+<th>最弱占位与边界</th>
+<th>意图一致？</th>
+<th>页面</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>convert epub to audiobook</td>
+<td>70，返回正数</td>
+<td>Eist DR3 是阅读器内容页；Voice-generator DR3 为转换页；8条样本</td>
+<td>文件→音频，对口；下载格式需说明</td>
+<td>首页</td>
+</tr>
+<tr>
+<td>convert pdf to audiobook</td>
+<td>170，返回正数</td>
+<td>VoiceBrief DR17；8条样本</td>
+<td>对口，也混有朗读需求</td>
+<td>PDF页</td>
+</tr>
+<tr>
+<td>epub to audiobook converter</td>
+<td>未返回</td>
+<td>Voice-generator DR3、AudiobookGen DR4；8条样本</td>
+<td>更偏工具，适合作首页同义词</td>
+<td>首页</td>
+</tr>
+<tr>
+<td>epub to m4b</td>
+<td>10，返回正数</td>
+<td>9条样本疑似丢词，最弱占位未取得</td>
+<td>任务很纯，量少且SERP待补</td>
+<td>格式指南＋转换入口</td>
+</tr>
+</tbody>
+</table>
+<p>以上每项来源：<a href="evidence/final-judgments.json">逐词量、DR与落地页</a>。低 DR 只描述样本，链接预算仍未取得。</p>
+<p><strong>对标内页能学什么：</strong> LibriTalk 已做 <code>/epub-to-audiobook</code>、<code>/pdf-to-audiobook</code>、<code>/epub-to-m4b</code> 与比较页；预跑可见它的 EPUB 页出现在美国 <code>ebook to m4b</code> 的第6位，该词月搜不能认证为0，也不能当拉量证明。VoiceBrief 的 <code>/blog/how-to-convert-pdf-to-audiobook</code> 出现在美国 PDF 主词第1位。<strong>对标各内页真实流量、全站出词、来源占比均未取得</strong>，只能说看到了落地页。<a href="https://libritalk.com/epub-to-audiobook">LibriTalk内页</a> · <a href="https://voicebrief.io/blog/how-to-convert-pdf-to-audiobook">VoiceBrief内页</a> · <a href="evidence/final-judgments.json">排名快照</a></p>
+<p><strong>市场顺序：</strong> 先英文，再西语。PDF 主词在 US／UK／CA／AU 分别为880／110／210／90；西班牙 <code>pdf a audiolibro</code> 为320，但SERP含未解析跳转，不能直接判竞争。其它市场完整代表词见附录；日、韩、荷没有可用正数，<strong>不等于需求为零</strong>。<a href="evidence/final-judgments.json">各国数据</a></p>
+<h2 id="google-trends">趋势：有历史月量，Google Trends 未取得</h2>
+<p>Google Trends 美国 <a href="https://trends.google.com/trends/explore?date=today%2012-m&amp;geo=US&amp;q=pdf%20to%20audiobook%2Cepub%20to%20audiobook">1年</a>／<a href="https://trends.google.com/trends/explore?date=today%205-y&amp;geo=US&amp;q=pdf%20to%20audiobook%2Cepub%20to%20audiobook">5年</a>：<strong>未取得</strong>，页面未能读取。不能据此判断增长或衰退。</p>
+<p>初筛留存了三词的逐月量，区间为2025-10至2026-09，不是实时需求预测。PDF 主词先降后回升；EPUB 多数月份为390，但并非全年都390。<a href="evidence/keyword-monthly-trends.json">逐月归档</a> · <a href="https://api.pxany.com/v1/keyword-volumes">供应商接口</a></p>
+<table>
+<thead>
+<tr>
+<th>月份</th>
+<th style="text-align: right;">pdf to audiobook</th>
+<th style="text-align: right;">epub to audiobook</th>
+<th style="text-align: right;">convert pdf to audiobook</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-10</td>
+<td style="text-align: right;">1300</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">210</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2025-11</td>
+<td style="text-align: right;">880</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: right;">210</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2025-12</td>
+<td style="text-align: right;">590</td>
+<td style="text-align: right;">260</td>
+<td style="text-align: right;">140</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-01</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">260</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-02</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">320</td>
+<td style="text-align: right;">170</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-03</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">170</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-04</td>
+<td style="text-align: right;">880</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">140</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-05</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">140</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-06</td>
+<td style="text-align: right;">590</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">170</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-07</td>
+<td style="text-align: right;">590</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">140</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-08</td>
+<td style="text-align: right;">720</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">140</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+<tr>
+<td>2026-09</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">390</td>
+<td style="text-align: right;">210</td>
+<td><a href="evidence/keyword-monthly-trends.json">归档</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">需求原声：有求助，章节下载的刚需仍要单独验</h2>
+<p>日期和赞/评论数采用10月28日 Arctic Shift 归档的北京时间；网页正文能打开的已复核。热度是快照，不是当前数。<a href="evidence/reddit-audit.json">归档与方法</a></p>
+<table>
+<thead>
+<tr>
+<th>用户／日期／快照热度</th>
+<th>原声、卡在哪一步</th>
+<th>现用工具与付款</th>
+<th>能证明什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>想转换教材的读者；2026-10-09；0赞／32评</td>
+<td>“though I have never tried it”；评论又说明不会安装 GitHub 项目，并称 ElevenReader 的 PDF 提取差</td>
+<td>询过 Speechify，试过 ElevenReader；未找到付款</td>
+<td>需求与免安装、提取纠错缺口存在；不能证明章节下载会收费。<a href="https://www.reddit.com/r/audiobooks/comments/1x1gzyn/speechify_alternatives/">原帖</a></td>
+</tr>
+<tr>
+<td>公交通勤学生；2026-09-09；0赞／27评</td>
+<td>想把 PDF 转成音频；在评论说更想要免费版，并准备找现成有声书</td>
+<td>未找到已付费工具</td>
+<td>有通勤场景，也有免费和现成音频替代，不能把这位用户直接算付费线索。<a href="https://www.reddit.com/r/audiobooks/comments/1wayh4n/whats_the_best_pdf_to_audiobook_convertion_app/">原帖</a></td>
+</tr>
+<tr>
+<td>EPUB 持有者；2026-08-28；0赞／5评</td>
+<td>“upload a EPUB and it converts it to an audio file”</td>
+<td>现用工具、付款未找到</td>
+<td>最贴近文件转换；未明确要求 M4B/章节。网页重开失败，正文仅从归档核对。<a href="https://www.reddit.com/r/audiobooks/comments/1w07aei/">原帖入口</a> · <a href="evidence/reddit-selected.json">归档</a></td>
+</tr>
+<tr>
+<td>大文件读者；2026-10-25；0赞／4评</td>
+<td>800页 PDF 该用什么工具转音频</td>
+<td>现用工具、付款未找到</td>
+<td>长文处理有需求，不能据页数推字符数或成本；网页重开失败。<a href="https://www.reddit.com/r/audiobooks/comments/1xewht8/">原帖入口</a> · <a href="evidence/reddit-selected.json">归档</a></td>
+</tr>
+</tbody>
+</table>
+<p>本地检查找到上述4条直接求助，<strong>都未明确同时要求章节文件并声称已付款</strong>。这不是半年全量频次：r/audiobooks、r/ebooks 的归档时间不足半年，且原帖不一定区分“生成文件”和“在App里听”。<a href="evidence/reddit-audit.json">计数及逐帖判定</a></p>
+<h2 id="_5">对标拆解与付费证据</h2>
+<h3 id="libritalk">LibriTalk：产品完全对口，成交规模未找到</h3>
+<p>已核实输入 EPUB/文字 PDF、选声音、交付章节 M4B，首本受长度限制免费；之后按本报价，输出文件可带走。它已经覆盖“按本、不订阅、章节文件”这一基础卖点；扫描 PDF 要先做 OCR（图片转文字）。<strong>真实月流量、付费人数、营收、续购率、融资：未找到</strong>。不能把它上线和有价格当成 PMF。<a href="https://libritalk.com/">官网</a> · <a href="https://libritalk.com/tos">条款</a></p>
+<p>切入应放在转换质量与可修复性：让用户确认切章、跳过目录页脚、纠正人名读音，失败时保留已完成章节。原帖存在不会安装和 PDF 提取失败的抱怨，说明有可调查的缝隙；<strong>这些人是否愿意另付钱尚未证明</strong>。<a href="https://www.reddit.com/r/audiobooks/comments/1x1gzyn/speechify_alternatives/">抱怨及现用工具</a></p>
+<h3 id="voicebrief">VoiceBrief：已核实有人付款，但出售的是学习套件</h3>
+<p>当前官网价 <strong>$14.99/月或$99.99/年</strong>，含原文朗读、讲解、测验、笔记等，Pro 可下载 MP3；未找到原生章节 M4B 交付证明。<a href="https://voicebrief.io/pricing">当前定价</a> · <a href="https://voicebrief.io/product-facts">产品事实</a></p>
+<p>TrustMRR 的2026-10-28更新页显示 <strong>MRR $254、6个活跃订阅、累计收入$2,276</strong>，并标明通过 Stripe API 验证。<strong>6个活跃订阅不等于6个累计付费用户</strong>，更不是为 M4B 单项付费的人数。官网当前价与验证页旧产品介绍不一致，不反算人数。真实月流量未找到；Toolmage 的 <strong>13.6K/月</strong>未注明统计月份和清晰口径，不作为可信流量使用。<a href="https://trustmrr.com/startup/voicebrief">付款规模来源</a> · <a href="https://www.toolmage.com/en/compare/ai-exam-analyzer-vs-voicebrief/">流量线索，未采信</a></p>
+<p><strong>最多三条付费相关原话：</strong></p>
+<ol>
+<li>LibriTalk：“Pay once per audiobook. No subscriptions.”——<strong>按件价／仅定价页</strong>，不算真实成交。<a href="https://libritalk.com/">来源</a></li>
+<li>TrustMRR：“Revenue is verified with Stripe API key.”——<strong>真实订阅收入验证</strong>，但对应学习套件，隔离于主任务付费评分。<a href="https://trustmrr.com/startup/voicebrief">来源</a></li>
+<li>初筛 Speechify 帖：“I am fine paying for the premium but I want it to be worth it.”——<strong>意愿，非付款</strong>；其输入是粘贴长故事，属于相邻任务，不计主评分。网页未重开，使用归档核对。<a href="https://www.reddit.com/r/audiobooks/comments/1vqiwdg/">原帖</a> · <a href="evidence/reddit-selected.json">归档</a></li>
+</ol>
+<h3 id="_6">按本还是订阅：先按本，不能把讨厌订阅等同于肯付费</h3>
+<p>建议先卖有字符上限的单本交付，原因是每次输出可保存、用户未证明有连续月需求，且按本报价可在生成前确定。<strong>“全书、不限长度”会把超长文件风险留给我们。</strong> LibriTalk 的模式是供给侧证据；Reddit 同时有希望免费的人，也有重度听众偏好不限本数订阅的帖子，后者购买的可能是内容库，不能混为文件转换的接受度。<a href="https://libritalk.com/">按本对标</a> · <a href="https://www.reddit.com/r/audiobooks/comments/1wayh4n/whats_the_best_pdf_to_audiobook_convertion_app/">通勤用户偏免费</a> · <a href="https://www.reddit.com/r/tts/comments/1u4pa1p/anyone_else_completely_tired_of_the_1_credit_per/">内容订阅相邻讨论</a></p>
+<p><strong>成本演算，仅作明确假设：</strong> 假设一单实际送入 TTS 的文本为50万字符，DeepInfra Kokoro 单价$0.99/百万字符，则TTS为$0.495。若采用美国 Stripe 标准本地卡费率2.9%＋$0.30，$4.99订单支付费约$0.445，合计约$0.940，尚余$4.050覆盖其它成本，<strong>不叫净利润或实测毛利</strong>。相同文本若只收$0.99，两项之后仅余约$0.166，稍有重做或客服就可能亏损。实际团队主体、跨境卡、税费及退款费用均须另核。<a href="https://deepinfra.com/hexgrad/Kokoro-82M">模型单价</a> · <a href="https://stripe.com/pricing">美国费率</a></p>
+<h2 id="ai">AI压力测试与额外深挖</h2>
+<table>
+<thead>
+<tr>
+<th>问题</th>
+<th>核实结论／对产品的影响</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①LibriTalk／VoiceBrief真实流量与付费人数</td>
+<td>LibriTalk 两项均未找到；VoiceBrief 真实流量和累计付费人数未找到，只取得6个活跃订阅的验证快照。它的套件收入不能为章节文件背书。<a href="https://trustmrr.com/startup/voicebrief">验证页</a></td>
+</tr>
+<tr>
+<td>②版权与Stripe风控</td>
+<td><strong>无DRM不等于有权转换，更不等于自动合法。</strong> 美国版权法的复制/改编权与例外需要按具体使用判断；“仅个人使用”声明不是通行证。Stripe 禁止侵权及帮助侵权的产品和服务。最小产品限自有作品、公版或明确获准转换的文件，不做破解、代找书或公开音频库；权利声明、删除和投诉处理是产品约束，不能保证支付审核通过。<a href="https://www.copyright.gov/title17/92chap1.html">美国版权法§106–107</a> · <a href="https://stripe.com/legal/restricted-businesses">Stripe政策</a> · <a href="https://libritalk.com/tos">直接对标条款</a></td>
+</tr>
+<tr>
+<td>中国团队远程成交</td>
+<td>软件可远程交付，但 Stripe 全球可用地区列表未列中国大陆直接开户，列有香港；现有合格主体和收款能力本次未取得，不能写“中国团队必能直接接Stripe”。<a href="https://stripe.com/global">官方地区列表</a></td>
+</tr>
+<tr>
+<td>③按本vs订阅</td>
+<td>优先按本、有长度上限、试听后付费；这是验证设计。当前未找到同任务购买人群的可靠偏好比例或续费数据。到观察到重复需求后再评估订阅。<a href="https://libritalk.com/">供给侧模式</a></td>
+</tr>
+<tr>
+<td>④AI旁白反感会否影响自用</td>
+<td><strong>会影响质量预期，不能说自用就不在乎。</strong> 反感帖既抱怨未披露AI，也抱怨重音与人物区分；自用用户主动选声可减少“被骗”的感觉，仍须试听检验。另有用户认可AI读没有有声版的书，但属于定性反馈，不能推接受率。<a href="https://www.reddit.com/r/audiobooks/comments/1v4iobz/what_are_your_ai_narrator_tells/">反例</a> · <a href="https://www.reddit.com/r/tts/comments/1wwgyxp/i_think_audiobooktts_is_about_to_get_weird/">认可反馈</a></td>
+</tr>
+<tr>
+<td>ChatGPT或大平台原生免费替代</td>
+<td>本次未找到 ChatGPT “上传整书→逐章原文→可导入M4B”原生完整交付的官方证明；也未做账号实测，不能断言其无法做到。OpenAI API已有文本产音频能力，证明合成层可被通用能力覆盖，不能据API推断ChatGPT产品限制。<a href="https://developers.openai.com/api/reference/resources/audio/subresources/speech/methods/create">官方API</a></td>
+</tr>
+<tr>
+<td>Google免费音频概览</td>
+<td>Google官方说明 Audio Overview 是讨论/概览，可下载音频；不能把“可下载概览”当“整书逐字章节转换”，也不能把“可下载音频”本身当壁垒。<a href="https://support.google.com/gemininotebook/answer/16212820?hl=en">官方说明</a></td>
+</tr>
+<tr>
+<td>更直接的免费压力</td>
+<td>ebook2audiobook 已覆盖章节与M4B；NightForge 已支持手机端离线切章和导出；Paper2Audio 有每周56小时免费生成及App离线听。免费文件导出确实存在，是否好用到让目标人群放弃付费须比较实测。<a href="https://github.com/DrewThomasson/ebook2audiobook">开源转换</a> · <a href="https://github.com/kingfish600/Audiobook-NightForge">手机端</a> · <a href="https://www.paper2audio.com/">免费听书</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>AI越强，声音与PDF结构处理越好，但竞争者同样受益。</strong> 用户继续付钱的理由只能是少折腾、原文不漏读、错误能局部修、播放器可用和交付可靠。若免费方案在同一组目标文件上已经满足这些要求，或平台原生免费交付同等文件，应停止这个收费切口；仅做API包装不足以支撑长期收费。</p>
+<h2 id="seo">验收节点：先付款与交付，再看SEO，指标分开</h2>
+<p>以下数量是<strong>建议的内部实验闸门，不是行业基准或PMF证明</strong>：先找10位确实手里有待转文件、明确要求拿走音频的陌生用户；免费短段试听后，以$4.99/50万字符上限售卖。记录每次文件解析、人工修正、合成失败、下载及退款。</p>
+<table>
+<thead>
+<tr>
+<th>节点</th>
+<th>验什么</th>
+<th>通过与停止条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首付</td>
+<td>陌生用户实际完成支付，音频可导入其播放器</td>
+<td>目标先取得3位不同用户的真实首单与可用成品；若10位合格用户中0人付款，暂停该报价/交付切口；1–2人仅作继续访谈信号，不能宣布成立。排除熟人、全额返现和只生成免费样本。</td>
+</tr>
+<tr>
+<td>复用</td>
+<td>首单后是否再次上传自己的另一份文件、为什么再来</td>
+<td>记录再次使用人数与文件，不把套餐内使用或重做同一文件算再次付款；观察期限随用户下一份实际待听文件确定。</td>
+</tr>
+<tr>
+<td>再次购买／续费</td>
+<td>按本看第二笔实际订单；订阅看进入下一计费期后成功扣款及退款</td>
+<td>本方案按本，月续费暂不适用；不能用一次充值后第二次使用冒充复购。未来改月订阅才另设续费指标。</td>
+</tr>
+<tr>
+<td>D0→收录→出词→SEO付款</td>
+<td>发布工具、sitemap与GSC Request Indexing；确认收录，再看曝光/排名和自然搜索订单</td>
+<td>收录窗口、起量天数：待哥飞顾问按内页生命周期模型补。合成成本加真实人工服务成本无法被售价覆盖，或免费方案已满足目标用户时停；没有可比实付前不扩语种、不买外链。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">老站内页验证</h2>
+<p>按提供的业务介绍，RapAI（rapai.video，AI说唱视频）和 burning-bridges（TikTok热梗视频）虽涉及音视频，但没有已证实的电子书清洗、切章与听书导入能力；parkcapi（停车价格）、html-to-url（静态页面发布）主题也不对口。<strong>四站均不建议硬挂这个转书工具页</strong>；现有后台能力未独立检查。<a href="evidence/report-format-v3.md">站点用途依据</a></p>
+<p>如果继续验证，用不带他人商标的新域名单页，把EPUB/PDF输入、原文试听、章节成品和字符计价讲清。先通过首付闸门，再建设上述首页与两个内页。这是最小验证建议，当前没有发布网站。</p>
+<h2 id="_8">附录</h2>
+<h3 id="a">A. 页面简报</h3>
+<p>下列为相关SERP中前三个可核对的竞品/工具商页面，<strong>不是同一关键词完整前三名</strong>；Title按抓取可见页面标题记录，HTML头部未单独复抓。<a href="evidence/final-judgments.json">SERP位置</a></p>
+<table>
+<thead>
+<tr>
+<th>页面与出处</th>
+<th>可见Title／H1</th>
+<th>首屏做什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VoiceBrief，PDF主词样本第1位</td>
+<td>Title：PDF to Audiobook Free: Convert &amp; Download MP3；H1：How to Convert a PDF to Audiobook Free (2026 Step-by-Step)</td>
+<td>解释免费试听与Pro下载整份MP3，并分流OCR、朗读和章节规划。<a href="https://voicebrief.io/blog/how-to-convert-pdf-to-audiobook">页面</a></td>
+</tr>
+<tr>
+<td>AudiobookGen，convert EPUB样本第2位</td>
+<td>Title：AI Audiobook Generator | Convert EPUB to Audiobook in Minutes；H1：AI Audiobook Generator.</td>
+<td>上传自己的书，先看声音样本与价格，转换后下载MP3；不将其当M4B证明。<a href="https://audiobookgen.com/">页面</a></td>
+</tr>
+<tr>
+<td>NarrationBox，convert EPUB样本第3位</td>
+<td>Title：Converting EPUB Book into an Audiobook Using AI；正文可见两个一级标题，后者为完整2026 Guide</td>
+<td>面向作者/教育者，介绍出版旁白流程；属于同词下相邻商业意图，不贡献个人转换的付费分。<a href="https://narrationbox.com/blog/converting-epub-book-into-audiobook-using-ai">页面</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>我们的页</th>
+<th>建议Title</th>
+<th>H1</th>
+<th>H2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>EPUB to Audiobook Converter — Download M4B with Chapters</td>
+<td>Turn Your EPUB into a Chaptered Audiobook</td>
+<td>Check chapters and text；Hear your selected voice；Pay for this book；Download and import</td>
+</tr>
+<tr>
+<td><code>/pdf-to-audiobook</code></td>
+<td>PDF to Audiobook — Check Text, Keep Chapters, Download</td>
+<td>Convert a Text PDF into an Audiobook</td>
+<td>Check reading order；Remove page headers；Fix chapter breaks；Download M4B or chapter MP3s</td>
+</tr>
+<tr>
+<td><code>/epub-to-m4b</code></td>
+<td>EPUB to M4B — Convert and Import Chaptered Audio</td>
+<td>Make an M4B Audiobook from Your EPUB</td>
+<td>What chapters contain；Check your sample；Import into your player</td>
+</tr>
+</tbody>
+</table>
+<p>第一屏应放文件选择、权利确认、真实可播放样本、输入限制和按字符报价说明；失败文件在付款前提示。播放器兼容性要实测，不能从扩展名直接保证“支持所有App”。</p>
+<h3 id="b">B. 数据口径、缺口与修正</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>已取得／未取得</th>
+<th>对结论的影响与来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>扩词覆盖</td>
+<td>612个市场×词；97个唯一核心词；220条核心市场组合均已跑SERP，另1条外围词过门槛</td>
+<td>只覆盖指定11市场、8种语言；数量不是完成或市场规模指标。<a href="evidence/keyword-summary.json">审计</a></td>
+</tr>
+<tr>
+<td>搜索量状态</td>
+<td>最终120条返回正数、492条未返回；显式供应商0无法确认；本批原查询组合中未查询0条</td>
+<td>原脚本381条记为“供应商返回0”，但代码会把空值也写0，且原始metrics未留存；全部保守改为未返回。不得写零需求。<a href="evidence/final-judgments.json">最终表</a> · <a href="evidence/original-serp.json">原始表</a></td>
+</tr>
+<tr>
+<td>补查失败与未查询</td>
+<td>已实际请求接口，但DNS失败；这不把原正数清零。相邻词未作本轮主任务查询</td>
+<td>未返回不是≤200；没有扩查的市场/词不冒充查询过。<a href="evidence/volume-recheck-error.json">错误记录</a></td>
+</tr>
+<tr>
+<td>SERP样本</td>
+<td>221组；101组9条、89组8条、31组7条，完整十条0组</td>
+<td>PDF主词8条；EPUB主词/EPUB→M4B疑似丢词；西语短主词有6条未解析跳转。只修正证据质量，不假装重抓十席。<a href="evidence/final-judgments.json">最终表</a></td>
+</tr>
+<tr>
+<td>域名年龄</td>
+<td>保留注册日；按2026-10-29回看12/18个月，以独立域名去重</td>
+<td>只为观察线索；有年轻站不代表获客容易，也不能推外链预算。部分地区注册日缺失。<a href="evidence/keyword-serp-full.md">明细</a></td>
+</tr>
+<tr>
+<td>KD／KGR／链接预算</td>
+<td>未取得；allintitle结果数未查询</td>
+<td>不用广告竞争代替KD；经验阈值全部待项目复核，不作为扣分硬线。</td>
+</tr>
+<tr>
+<td>趋势</td>
+<td>三个词12个月归档已取得；Google Trends一年/五年未取得</td>
+<td>其它词逐月趋势未取得；不由平均月搜编出趋势。<a href="evidence/keyword-monthly-trends.json">逐月原数</a></td>
+</tr>
+<tr>
+<td>流量／出词／估值</td>
+<td>最大同任务站真实访问量、SEO流量词、精确来源占比、估值、Stripe引荐数据均未取得</td>
+<td>不采信无统计月份的流量数字，不拿Speechify全品类流量填空；公开收入与估值是两回事。</td>
+</tr>
+<tr>
+<td>PMF、成本、实测</td>
+<td>同任务真实付款、复购、净成本、转换质量实测未取得</td>
+<td>价格、开源功能声明和理论算式均不能代替这些验证；暂缓完整站。</td>
+</tr>
+<tr>
+<td>初筛五项原分</td>
+<td>未找到</td>
+<td>已有初筛报告和必填任务/关键词/证据类型；无法完成原分逐项差值比较，保留“未找到”。<a href="evidence/source-handoff.md">源卡</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>修正初筛三处推断：</strong> CPC和Ads competition不能证明“长期有人投放”；低DR和域名年轻不能证明外链要求低；在用Speechify和愿意买premium不能证明已为章节文件付款。均已在最终报告中撤去相应推断。<a href="evidence/source-demand.md">初筛原文</a></p>
+<h3 id="c">C. 各国代表词与全量表</h3>
+<table>
+<thead>
+<tr>
+<th>市场／当地语言</th>
+<th>代表词</th>
+<th>月搜状态</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US／en</td>
+<td>pdf to audiobook</td>
+<td>880（返回正数）</td>
+<td>先做英文</td>
+</tr>
+<tr>
+<td>UK／en</td>
+<td>pdf to audiobook</td>
+<td>110（返回正数）</td>
+<td>英文共用，暂不拆国家页</td>
+</tr>
+<tr>
+<td>CA／en</td>
+<td>pdf to audiobook</td>
+<td>210（返回正数）</td>
+<td>英文共用，暂不拆国家页</td>
+</tr>
+<tr>
+<td>AU／en</td>
+<td>pdf to audiobook</td>
+<td>90（返回正数）</td>
+<td>英文共用，暂不拆国家页</td>
+</tr>
+<tr>
+<td>DE／de</td>
+<td>pdf in hörbuch umwandeln</td>
+<td>50（返回正数）</td>
+<td>P2，量小先不扩</td>
+</tr>
+<tr>
+<td>FR／fr</td>
+<td>convertir epub en livre audio</td>
+<td>10（返回正数）</td>
+<td>P2，量小先不扩</td>
+</tr>
+<tr>
+<td>ES／es</td>
+<td>pdf a audiolibro</td>
+<td>320（返回正数）</td>
+<td>P2，英文交付有实付后再测</td>
+</tr>
+<tr>
+<td>IT／it</td>
+<td>convertire pdf in audiolibro</td>
+<td>10（返回正数）</td>
+<td>P2，量小先不扩</td>
+</tr>
+<tr>
+<td>NL／nl</td>
+<td>pdf omzetten naar luisterboek</td>
+<td>未返回</td>
+<td>P2，先不扩；未知量不能按0处理</td>
+</tr>
+<tr>
+<td>JP／ja</td>
+<td>pdf オーディオブック 変換</td>
+<td>未返回</td>
+<td>P2，先不扩；未知量不能按0处理</td>
+</tr>
+<tr>
+<td>KR／ko</td>
+<td>pdf 오디오북 변환</td>
+<td>未返回</td>
+<td>P2，先不扩；未知量不能按0处理</td>
+</tr>
+</tbody>
+</table>
+<p>各行来源：<a href="evidence/final-judgments.json">最终关键词表</a>。日/韩/荷未找到可信正数量，未用英语硬套当地市场。完整扩词、各国量/CPC、SERP逐条和不足十席标注见 <a href="evidence/keyword-serp-full.md">全量附表</a>；核心词见 <a href="kw/core.txt">core.txt</a>，<a href="kw/en.txt">英语</a>、<a href="kw/de.txt">德语</a>、<a href="kw/fr.txt">法语</a>、<a href="kw/es.txt">西语</a>、<a href="kw/it.txt">意语</a>、<a href="kw/nl.txt">荷语</a>、<a href="kw/ja.txt">日语</a>、<a href="kw/ko.txt">韩语</a>。相邻机会仅列表于 <a href="kw/adjacent.txt">adjacent.txt</a>。</p>
+<h3 id="d-reddit">D. Reddit方法与证据等级</h3>
+<p>先选相关中小社区 r/TTS；r/audiobooks、r/ebooks 较大，使用初筛已有归档补充。本轮 Arctic 请求及稍后重试均DNS失败，没有换IP；随后用 site:reddit.com 与完整原帖地址核对。引用原帖时打开正文，无法打开的明确标归档来源。<a href="evidence/arctic-probe-error.json">失败记录</a> · <a href="evidence/arctic-retry-error.json">重试</a></p>
+<table>
+<thead>
+<tr>
+<th>社区归档</th>
+<th style="text-align: right;">帖子数</th>
+<th>北京时间覆盖</th>
+<th>限制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r/audiobooks</td>
+<td style="text-align: right;">2500</td>
+<td>2026-07-07至10-28</td>
+<td>不满半年，上游日志有422错误，不能叫近半年全量</td>
+</tr>
+<tr>
+<td>r/ebooks</td>
+<td style="text-align: right;">1500</td>
+<td>2026-09-16至10-28</td>
+<td>不满半年，开发者自荐多</td>
+</tr>
+<tr>
+<td>r/TTS</td>
+<td style="text-align: right;">145</td>
+<td>2026-04-29至10-26</td>
+<td>日期跨度覆盖半年目标的主要区间，最新几天未取得；不宣称抓取无遗漏</td>
+</tr>
+</tbody>
+</table>
+<p>数据源：<a href="evidence/reddit-audit.json">覆盖审计</a>；帖子语义筛选后57条候选＝56条正则召回＋1条初筛种子帖，已按 <a href="evidence/reddit-ranked-score.json">点赞</a> 和 <a href="evidence/reddit-ranked-comments.json">评论</a> 分别排序。人工仅把4条列作直接转换求助，2条仅标题不足，其余为自荐、已有音频同步/播放等相邻内容。痛点计数以帖子为单位、未做作者去重；不推总体发生率，不把自荐数量算需求强度。网页评论只定性核对，不伪造评论全量统计。<a href="evidence/reddit-candidates.json">逐帖判定</a></p>
+<p>评级：官网功能与价格＝供给证据；用户说愿付＝意愿；Stripe验证页＝该产品收入证据；当前任务的独立付款和复购仍未找到。所有研究网页摘录及失败信息保存在 evidence 内，证据包不包含密钥。</p>
+<h3 id="e">E. 用时与交付</h3>
+<p>时区：Asia/Shanghai。扩词与预跑从2026-10-28 22:50:44开始，关键词完成于22:54:17；SERP结束于2026-10-29 00:48:31。报告调查从00:48:31至2026-10-29 01:20:54，墙钟1943秒；全流程墙钟9010秒。<a href="evidence/timing-final.json">计时记录</a> · <a href="evidence/original-timing.txt">原始日志</a></p>
+<p>报告、命名副本与SERP摘要使用同一份最终判定数据。未创建公开网页，公开链接未取得；本次交付本地Markdown及可携带的证据包。</p></section><section id="sop-criteria"><h2 class="sec">sop-criteria.md</h2><p>【对齐需求发掘专员的筛选标准——这是本次调查的核心依据】
+其打分 5 项（各 1–5）：①需求真实 ②付费意愿 ③好服务（用户非专业、要求不高；不限 B 端，C 端也可以，B 端小老板只是加分；专业挑剔或出错要担大责任的扣分）④小团队做得动 ⑤形态简单（表单类）；①或②&lt;3 不推荐。原则：AI 时代赋能（AI 越强产品越好，用户不会因有 AI 就不用）；门槛：对标产品已验证 PMF——且 PMF 必须对得上<strong>当前切口</strong>，大品类有人付费不能直接证明这个小功能有人另付钱。
+初步报告须先钉死：谁、输入、输出、单一用户任务；相邻机会拆开，不混进同一条五项打分。</p>
+<p>你的任务是逐项核实/推翻它给的分数和证据，而不是另起一套标准：
+- 关卡1 核①：逐页打开原帖核对原话和日期（近半年优先），给出你核实后的分数。
+- 关卡2 核②+PMF：官网核实竞品价格、客户数、融资、流量；"有成熟对标产品在收钱"是通过信号，不是否决理由——但必须是当前切口的对标，不是相邻大品类。
+- 关卡3 核③④⑤+切入可行性：不要因为"已有竞品/低价竞品"就止损。只在以下情况止损：免费方案已足够好且用户满意、或头部产品价格已低到小团队无利可图、或差评里找不到任何可切入缺口、或研发/合规负担超出小团队。要明确写出小团队可切的缝隙及证据。
+- 关卡4 市场体量，关卡5 核"AI 时代赋能"是否成立。
+报告开头列一张表：5 项"专员原分 / 核实后分 / 关键证据"；首屏另给三维决策（需求／独立收费／SEO 优先级），总分可放附录。</p></section><section id="sop-v3"><h2 class="sec">sop-v3.md</h2><p>【入口铁律】新赛道必须先有需求发掘专员的初步报告与五项打分，再进入本 SOP 深挖。用户口头点题也先转需求发掘专员，禁止未经初步直接扩词/SERP/写报告。</p>
+<p>你是赛道深度调查员。需求来源报告：<strong>SRC</strong>。中文，精炼。每个数据附来源链接，查不到写"未找到"，严禁编造。
+核心原则：有竞品不是否决理由。竞品赚钱多说明市场被验证，做老二也可以。我们主打 SEO。
+团队在中国做出海：只做能远程成交的软件/SaaS 获客，不做必须本地履约的服务需求。</p>
+<p>【先钉死研究对象】报告开头必须固定：谁、输入是什么、输出是什么、本次只判断哪一个用户任务。
+- 相邻机会（相近但输入/输出不同）只列表，不贡献搜索量、付费证明或竞争评分。
+- 例：播客转文字 ≠ 已有文字稿→发布素材 ≠ 播客内容搜索，必须拆开。
+- 第一行一句话定位仍要写："这个产品帮助【什么人】，在【什么场景】下，解决【什么问题】。"标题用直白话，术语首次出现要解释。</p>
+<p>【第一步：核实赛道】确认需求真假（专员数据、原帖、竞品价格/客户数、Reddit Arctic Shift）。只有需求假或无人付费才停。用户原声要写清：什么用户、原话、抱怨的是哪一步、是否提过现用工具和付费。</p>
+<p>【第二步：调查关键词】
+1. <strong>按用户任务覆盖，不硬凑数量</strong>：先围绕已明确的用户任务找核心词、同义表达、具体场景词；确认相关后再扩市场。初筛可从几十个高相关词开始，不设「每种语言约 300」硬指标。
+2. 每个词都要能回答：搜这个词的人进入我们计划做的页面，能不能直接得到他想要的结果？不能 → 移到相邻机会或排除记录，不能因词里有同类行业词就硬套。
+3. 市场（只保留主要发达市场）：US、UK、CA、AU、DE、FR、ES、IT、NL、JP、KR。各国用当地语言查 Google 月搜索量。英语 en.txt 共用四英语市场；de/fr/es/it/nl/ja/ko 各自本地说法扩词。
+4. <strong>SERP 规则（2026-10-24 改）</strong>：
+   - <strong>核心需求词</strong>：无论月搜高低，都查实际搜索结果（确认意图、直接竞品、预期功能）。低量只影响 SEO 优先级，不能成为「不理解这个需求」的理由。
+   - <strong>外围扩展词</strong>：再用「该市场月搜 &gt; 200」控制调查成本；≤200 只记量。
+5. <strong>出海筛选（标配）</strong>：即使月搜&gt;200，若该词是「只有本地成交才能变现」的当地服务需求，也直接跳过 SERP，只记量并标注「本地服务跳过」。（保留找软件/系统/SaaS 的词。）
+6. <strong>搜索量记录</strong>：分清「返回正数 / 供应商返回 0 / 未返回 / 未查询」。没有查到数值，不能写成「未找到≤200」。</p>
+<p>【第三步：研究竞争格局】
+- <strong>按用户任务分组</strong>，再比较不同国家表现。同一任务的多种搜索表达合成一个需求组，不要「每个市场×关键词各写一套赛道结论」。
+- 用该国 Google 看前十；域名注册年龄保留为证据：<strong>近1年或近18个月≥2个、近18个月1个</strong> 仅标为观察线索（「样本中有年轻域名入榜，值得继续查」），<strong>不得直接升级为「新手友好／容易做」</strong>。还要看排名页满足什么需求、功能特点、有无可比小站、我们能否交付。DR 仅参考。样本不足完整前十时，必须写明样本条数，不得下满额结论。
+- 意图是否对口；该词头部/中小玩家与切入点。
+- 正文、serp.json、公开页必须读同一份<strong>最终判定表</strong>；旧标签可留在原始数据，但不得被后续汇总当最终结论。</p>
+<p>【第四步：投入产出与结论】
+- <strong>首屏三维决策</strong>（先于总分）：①有没有相关需求？②当前切口能否独立收费（待验证／已证明）？③适不适合优先靠 SEO 做站？
+- 总分满分 100 可留作内部筛选记录，放附录；五项评分里若未直接评 SEO 获客可行性，不要用总分冒充 SEO 优先级。
+- 验证指标必须分开：<strong>首付、复用、续费</strong>。月订阅看首付+使用、到续订周期再看续费；按次收费才看「第二单是否再买」。不要把套餐内再用当成再付。
+- 写清最小验证动作与停止条件；记录用时。</p>
+<p>【关键词作战表（2026-10-26 Cavill 定：报告核心=指导做哪些关键词）】
+- 报告顺序：第一行一句话定位 → 大白话结论 3-5 句 → <strong>关键词作战表（放最前面的核心章节）</strong> → 需求证据 → 能否单独收费 → 下一步验证 → 附录评分与用时（开始/结束/总时长）。
+- 扩词必须含头部宽词（如 xx app / xx software / ai xx / xx generator / xx tool 及各国当地说法），不能只查长尾；头部宽词一律进 core.txt 查 SERP。
+- 作战表按用户任务分组，每词一行：关键词｜市场/语言｜月搜量（返回正数/供应商返回0/未返回/未查询）｜竞争难度（数据商 KD，或据 SERP 前十：有无大站/专门工具站/论坛、近 1 年-18 个月新域名数；不满十条注明条数）｜搜索意图｜建议（首页主词／工具落地页／长尾内容页／不做）｜优先级 P0/P1/P2｜理由。
+- 表后必须给：「建站先做哪 3-5 个词、各对应什么页面」清单；「不做的词及原因」；「补查了哪些、仍未拿到数据的词」。
+- 只查 US/UK/CA/AU/DE/FR/ES/IT/NL/JP/KR，各用当地语言；只留工具/App/AI/软件意图，丢掉只能本地上门履约的词。域名年龄只是观察线索，不写「新手友好」。</p>
+<p>【报告结构三层】
+1. 一分钟看懂：研究哪个需求、当前建议、最关键支持/反对理由、哪个未知会改决定、下一步验证。
+2. 判断依据：场景与问题 → 现有解法与痛点 → 需求证据与反证 → 能承接的词与直接竞品 → 最小验证与停止条件。每节先结论再少量证据；每条重要证据说明支持什么、不能证明什么。
+3. 可展开证据与方法：完整国家/词表、剔除词及原因、旧评分修正、域名核验、DNS/重试/计时、SOP 与原始文件。影响决策的限制（如某国数据缺失）须留在正文，细节日志可附录。</p>
+<p>【验收】看完首屏应能说清：谁要什么、我们交付什么、有什么证据、为什么值得或不值得继续、下一步验证什么。说不清就继续改；关键词数量和报告长度不算完成标准。</p>
+<p>serp.py：准备 kw 目录（en.txt/de.txt/…），然后
+  python3 /workspace/research/serp.py <kw目录> &lt;输出目录&gt;
+核心词清单可单独标记，脚本侧逐步支持「核心词无视 200 门槛」；在脚本未改完前，人工保证核心词必做 SERP。</p>
+<p>【交付】报告里只写 https 外链；不要写 /workspace 本机路径。证据文件打进同名 zip，附件发 zip，并附公开网页链接。每个核心结论要有可打开的证据入口。</p>
+<h2 id="2026-10-27-report-format-v3md">2026-10-27 深挖流程更新（采纳哥飞顾问建议，报告格式见 report-format-v3.md）</h2>
+<ol>
+<li>开工卡：先收需求发掘专员的「初筛→深挖卡」（模板 handoff-card-template.md）。缺用户任务、核心词、付费证据类型任一项则退回；其它字段可写未取得。</li>
+<li>管线顺序：需求翻译 → 批量预筛（量/CPC/competition）→ 关键词难度（KD 无数据源，写未取得）→ 搜索量核实（规划师口径；12月趋势取不到写未取得）→ SERP 解密（十席+最弱占位）→ 域名概况（DR/RDAP；流量/出词无接口则写未取得或引公开估算并注明来源）→（可选）估值与 Stripe 引荐（目前无数据源，跳过）→ 一行结论 + 拒绝什么。额度用尽就停，不编。</li>
+<li>词族分析必做：父词 vs 拉量内页词；首页只绑最纯商业词。</li>
+<li>主词红海禁止硬刚，必须给替代尾词对比表。</li>
+<li>阈值 KD 0–29、KGR&lt;0.25、CPC&lt;$0.1、链接预算为社群经验值，一律标「待项目复核」，不当硬标准打分。KGR 需 allintitle 结果数，serp.py/PXAny 不提供，标未取得。</li>
+<li>验收节点天数不编；老站内页仅在主题对口时建议；AI 品类保留压力测试。</li>
+</ol></section><section id="files"><h2 class="sec">证据文件（原始数据）</h2><ul><li><a href="kw/adjacent.txt">kw/adjacent.txt</a> (1 KB)</li><li><a href="kw/core.txt">kw/core.txt</a> (2 KB)</li><li><a href="kw/de.txt">kw/de.txt</a> (1 KB)</li><li><a href="kw/en.txt">kw/en.txt</a> (1 KB)</li><li><a href="kw/es.txt">kw/es.txt</a> (1 KB)</li><li><a href="kw/fr.txt">kw/fr.txt</a> (1 KB)</li><li><a href="kw/it.txt">kw/it.txt</a> (1 KB)</li><li><a href="kw/ja.txt">kw/ja.txt</a> (1 KB)</li><li><a href="kw/ko.txt">kw/ko.txt</a> (1 KB)</li><li><a href="kw/nl.txt">kw/nl.txt</a> (1 KB)</li><li><a href="report.md">report.md</a> (35 KB)</li><li><a href="serp.json">serp.json</a> (1438 KB)</li><li><a href="serp.md">serp.md</a> (395 KB)</li><li><a href="sop-criteria.md">sop-criteria.md</a> (1 KB)</li><li><a href="sop-v3.md">sop-v3.md</a> (8 KB)</li><li><a href="timing.txt">timing.txt</a> (0 KB)</li><li><a href="电子书PDF转章节AI有声书-64分.md">电子书PDF转章节AI有声书-64分.md</a> (35 KB)</li></ul></section></div></body></html>
